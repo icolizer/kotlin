@@ -29,6 +29,7 @@ import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.kotlin.test.KotlinTestUtils;
+import org.jetbrains.kotlin.test.WithMutedInDatabaseRunTest;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,6 +40,7 @@ import java.util.Collection;
 
 import static org.jetbrains.kotlin.test.MuteWithDatabaseKt.isIgnoredInDatabaseWithLog;
 
+@WithMutedInDatabaseRunTest
 public abstract class KotlinLightCodeInsightFixtureTestCaseBase extends LightCodeInsightFixtureTestCase {
     @NotNull
     @Override

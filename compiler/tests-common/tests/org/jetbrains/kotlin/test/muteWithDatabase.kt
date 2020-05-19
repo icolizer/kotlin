@@ -312,3 +312,5 @@ fun isIgnoredInDatabaseWithLog(testCase: TestCase): Boolean {
 fun TestCase.runTest(test: () -> Unit) {
     (wrapWithMuteInDatabase(this, test) ?: test).invoke()
 }
+
+annotation class WithMutedInDatabaseRunTest
